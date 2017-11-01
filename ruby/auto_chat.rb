@@ -37,7 +37,7 @@ end
 loop do
   if counter < 1
     counter = 5
-    if msg
+    if msg != ""
         msg = botlist[rand(botlist.size)].send_msg(msg)
         socket.emit :chat, msg
     end
