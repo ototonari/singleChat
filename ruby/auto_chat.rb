@@ -10,9 +10,11 @@ docomo_bot2 = Docomo_bot.new('63764858366d2e5078544879496b7a476a3064464a4c364963
 user_bot1 = LocalUser_bot.new('ももか')
 recruit_bot1 = Recruit_bot.new('みずき')
 
-botlist = [docomo_bot1, docomo_bot2, user_bot1, recruit_bot1]
+#botlist = [docomo_bot1, docomo_bot2, user_bot1, recruit_bot1]
+botlist = [docomo_bot1, docomo_bot2, user_bot1]
+#botlist = [docomo_bot1, docomo_bot2]
 
-socket = SocketIO::Client::Simple.connect 'http://localhost:3000'
+socket = SocketIO::Client::Simple.connect 'http://localhost:8080'
 
 msg = ""
 counter = 5
